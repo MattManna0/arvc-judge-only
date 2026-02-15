@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "judgeRepo": {
+    "name": "arvc-judge-only",
+    "commit": "REPLACE_WITH_GIT_SHA"
+  },
+  "runtime": {
+    "timestampUtc": "REPLACE_WITH_ISO_8601",
+    "environment": "production",
+    "engineVersion": "0.1.0"
+  },
+  "model": {
+    "provider": "gemini",
+    "modelNameRequested": "gemini-3.0-flash",
+    "modelNameUsed": "REPLACE_IF_DIFFERENT",
+    "fallbackChain": [
+      "gemini-3.0-flash",
+      "gemini-2.5-flash",
+      "gemini-2.0-flash",
+      "gemini-1.5-flash"
+    ]
+  },
+  "judgeSettings": {
+    "mode": "full",
+    "metadataMode": "image_only",
+    "includePerTargetDetails": true,
+    "timeoutMs": 55000
+  },
+  "promptHashes": {
+    "fullPromptSha256": "OPTIONAL_HEX"
+  },
+  "inputHashes": {
+    "impressionHash": "OPTIONAL_HEX",
+    "targetSetHash": "OPTIONAL_HEX"
+  },
+  "outputHashes": {
+    "rawModelOutputSha256": "OPTIONAL_HEX",
+    "normalizedJudgmentSha256": "OPTIONAL_HEX"
+  }
+}

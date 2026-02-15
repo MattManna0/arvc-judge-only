@@ -1,0 +1,26 @@
+{
+  "name": "arvc-judge-only",
+  "version": "0.1.0",
+  "description": "Standalone transparent remote-viewing judge engine (single-pass, image-first).",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "JUDGE_SPEC.md",
+    "RUN_MANIFEST.template.json"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "typescript": "^5.9.2"
+  },
+  "license": "MIT"
+}
